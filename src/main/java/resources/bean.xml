@@ -9,7 +9,7 @@
         <constructor-arg value="customers.txt"/></bean>
     <bean id="bank" class="atm.Bank">
         <constructor-arg value="My Bank"/>
-        <constructor-arg ref="dataSourceDB"/>
+        <constructor-arg ref="dataSourceFile"/>
     </bean>
     <bean id="atm" class="atm.ATM">
         <constructor-arg ref="bank"/>
